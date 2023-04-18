@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/rsds/
+/test/
+/4.py
+/5.py
