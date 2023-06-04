@@ -3,13 +3,11 @@ import pathlib
 import tensorflow as tf
 
 batch_size = 32
-img_height = 32
-img_width = 32
-file_name = r'rsds'
+img_height = 300
+img_width = 300
 
-data_dir = pathlib.Path(file_name)
-# class_names = ['main_way', 'give_way', 'brick', 'stop_line', 'banned_stop', 'train']
-class_names = ['main_way', 'give_way', 'brick', 'train', 'banned_stop']
+data_dir = pathlib.Path('rsds')
+class_names = ['main_way', 'give_way', 'brick', 'stop_line', 'banned_stop', 'train']
 
 
 train_ds = tf.keras.utils.image_dataset_from_directory(
